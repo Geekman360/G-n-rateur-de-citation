@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  min-width: 500px;
+  background-image:url('img/fond.jpg') ;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#citation {
+  font-size: 2em;
+  font-family: 'Satisfy', curve;
+  line-height: 1.3em;
+  letter-spacing: 1px;
+}
+
+#citation:before {
+  content: open-quote;
+}
+
+#citation:after {
+  content: close-quote;
+}
+
+#auteur {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+#button {
+  background: linear-gradient(to right, #5effe4, #06bebe);
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#button:hover {
+  background: linear-gradient(to right, #05977f, #026464);
+  cursor: pointer;
+  color:white;
+}
+
+.bg-light {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  margin: 0 auto;
+  padding: 0;
+  width: 500px;
+  height: auto;
+  background-color: hsla(165, 45%, 46%, 0.194);
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .bg-light {
+    width: 90%;
+  }
+  
+  #button {
+    width: 80%;
+  }
+}
